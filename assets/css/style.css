@@ -1,0 +1,11 @@
+body {
+    background: url('../images/2.png') no-repeat center center fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: background .3s;
+}
+
+.card {
+  	width: 350px;
+     background: #00000030;
+}
