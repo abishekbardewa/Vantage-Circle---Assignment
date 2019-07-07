@@ -5,6 +5,7 @@ app.controller('ctrl_imageupload', function($scope, $http) {
 		}
 	});
 
+	
 	$scope.save_data = function(x) {
 		$('#imageform').ajaxForm(
 				{

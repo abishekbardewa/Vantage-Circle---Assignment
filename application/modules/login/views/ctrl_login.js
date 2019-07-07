@@ -1,6 +1,11 @@
 app.controller('ctrl_login',function($scope,$http){
 	$http.get('login/check_valid_session').success (function(data) {if(data!=1){window.location.assign('<?=site_url("login")?>');}});
 	
+	$scope.filter_new=function(){
+		$("#form1").trigger('reset');
+		$scope.y={};
+	}
+	
 	console.log("login")
 	$scope.register_data=function(){
 		$.ajax({
